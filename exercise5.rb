@@ -1,6 +1,8 @@
+puts "Please give a temperature in Farhieght:"
+temp = gets.chomp.to_i
+
 def temp_converter(f)
-	f.to_i
-	(f-32)*5/9
+	puts "The temperature in celcius is #{(f-32)*5/9}"
 end
 
-puts temp_converter(100)
+temp_converter(temp)
